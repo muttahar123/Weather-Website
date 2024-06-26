@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, sans-serif;
+}
+main{
+    background: #222 url(assest/day/snow\ fall\ in\ day\ time.jpg) no-repeat center / cover;
+    /* background-color: #222; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: #333;
+    padding: 20px;
+    max-width: 450px;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0);
+    text-align: center;
+}
+.search{
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #444;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+.search input{
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #fff;
+    caret-color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.weather{
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+.weather_icon{
+    width: 170px;
+}
+.weather h1{
+    font-size: 70px;
+    color: #fff;
+}
+.weather h2{
+    font-size: 40px;
+    color: #fff;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col p{
+    font-size: 18px;
+    color: #fff;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+.error{
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #b22222;
+    display: none;
+}
+
+@media(max-width: 425px){
+    .weather_icon{
+        width: 100px;
+    }
+    .details{
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        padding: 0 20px;
+        margin-top: 50px;
+    }
+    .weather h1{
+        font-size: 40px;
+        color: #fff;
+    }
+    .weather h2{
+        font-size: 20px;
+        color: #fff;
+    }
+    .col img{
+        width: 30px;
+        margin-right: 8px;
+    }
+    .col p{
+        font-size: 12px;
+        color: #fff;
+    }
+}
