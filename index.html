@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
+     <!-- remix icon link -->
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+     <!-- favicon link -->
+      <link rel="icon" href="favicon/ico.png" />
     <link rel="icon" href="assest/drizzle.png">
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
@@ -15,40 +19,37 @@
     <main>
         <div class="card">
             <div class="search">
-                <i title="search" class="ri-search-line search_btn"></i>
-                <input type="text" id="search_input" placeholder="Enter City Name">
-                <i title="Please Search Location" class="ri-map-pin-line"></i>
+                <i class="ri-map-pin-line"></i>
+                <input type="text" placeholder="Enter City Name" spellcheck="false">
+                <button class="ri-search-line"></button>
             </div>
             <div class="error">
                 <p>Invalid City Name</p>
             </div>
             <div class="weather">
-                <div>
-
-                    <img src="img/rain.png" class="weather_icon">
-                        <h1 class="temp">22°c</h1>
-                        <h2 class="city_name">Karachi</h2>
-                </div>
-                    <div class="details">
-                        <div class="col">
-                            <img src="img/humidity.png">
-                            <div>
-                                <p class="humidity">60%</p>
-                                <p>Humidity</p>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <img src="img/wind.png">
-                            <div>
-                                <p class="wind">15 km/h</p>
-                                <p>Wind Speed</p>
-                            </div>
+                <img src="img/rain.png" class="weather_icon">
+                <h1 class="temp">22°c</h1>
+                <h2 class="city">Karachi</h2>
+                <div class="details">
+                    <div class="col">
+                        <img src="img/humidity.png">
+                        <div>
+                            <p class="humidity">60%</p>
+                            <p>Humidity</p>
                         </div>
                     </div>
+                    <div class="col">
+                        <img src="img/wind.png">
+                        <div>
+                            <p class="wind">15 km/h</p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </main>
-
 
     <script src="script.js"></script>
 </body>
